@@ -1,4 +1,4 @@
-class UsersController < ApplicationController
+class UsersController < CommonUserController
   before_action :set_user, only: [:show]
   
   #get users
@@ -16,9 +16,5 @@ class UsersController < ApplicationController
   def user_params
     # whitelist params
     params.permit(:username, :email)
-  end
-
-  def set_user
-    @user = User.find(params[:id])
   end
 end

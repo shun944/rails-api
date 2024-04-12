@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_11_181712) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_12_185010) do
   create_table "items", charset: "utf8mb4", collation: "utf8mb4_0900_ai_ci", force: :cascade do |t|
     t.string "name"
     t.boolean "done"
@@ -24,6 +24,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_11_181712) do
     t.string "email"
     t.string "shop_name"
     t.string "pic"
+    t.string "is_open"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
