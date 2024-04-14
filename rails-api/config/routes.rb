@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     resources :items
   end
   resources :users
+  resources :companies
 
   get '/user_and_shop', to: 'user_and_shop#index'
   get '/user_and_shop/:id', to: 'user_and_shop#show'

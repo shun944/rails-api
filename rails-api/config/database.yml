@@ -60,7 +60,7 @@ development:
 
 test:
   <<: *default
-  database: testDB
+  database: testDB-test
 
 production:
   <<: *default
